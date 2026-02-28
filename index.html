@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topo">
+    <div class="container-topo">
+        
+        <div class="lado-esquerdo">
+            <img src="cordial.jpg.jpg" alt="Logo" class="logo">
+            <h1>Cadastro de Cliente</h1>
+        </div>
+
+        <div class="botoes">
+            <a href="index2.html" class="btn">Data Ship</a>
+            <a href="index3.html" class="btn">Inversor</a>
+            <a href="https://docs.google.com/spreadsheets/d/1W2dkSLU-TZ_CAEGyav5A7CBdJ6jY81zCcByrEsHcNEc/edit?usp=sharing" target="_blank" class="btn">Planilha</a>
+        </div>
+
+    </div>
+</header>
+
+<form action="" method="post" enctype="multipart/form-data" autocomplete="off">
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        Nome: <input type="text" name="nome" placeholder="Nome" required>
+        CPF: <input  type="text" name="cpf"  placeholder="Digite 11 números" pattern="\d{11}"  title="Digite exatamente 11 números" maxlength="11"required>
+        RG: <input type="number" name="rg" placeholder="RG">
+        Email: <input type="email" name="email" placeholder="Email">
+        N°Telefone: <input type="number" name="celular" placeholder="(88)1 1234-5678">
+    </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            Rua: <input type="text" name="rua" placeholder="Rua">
+            Cidade:<select name="cidade" required>
+             <option value="">Selecione a cidade</option>
+             <option value="Juazeiro do Norte">Juazeiro do Norte</option>
+             <option value="Crato">Crato</option>
+             <option value="Barbalha">Barbalha</option>
+              <option value="Fortaleza">Fortaleza</option>
+              <option value="Sobral">Sobral</option>
+            </select><br>
+            N°Casa: <input type="number" name="numero" placeholder="Número"><br>
+            Bairro: <input type="text" name="bairro" placeholder="Bairro">
+            Estado: <select name="estado" required>
+             <option value="">Selecione o Estado</option>
+             <option value="AC">Acre</option>
+             <option value="AL">Alagoas</option>
+             <option value="AP">Amapá</option>
+             <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+</select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Outros Dados</legend>
+            Unidade Gestora: <input type="number" name="unidade_gemdora"required placeholder="Unidade Gestora"><br>
+            Unidade Beneficiaria: <input type="text" name="unidade_beneficiaria"required placeholder="Unidade Beneficiaria"><br>
+        </fieldset>
+        <input type="submit" value="Próximo">
+    </form>
+    <script>
+         document.addEventListener('contextmenu', event => event.preventDefault());
+
+        document.querySelector("form").addEventListener("submit", function(e){
+                alert("Enviando dados com segurança...");
+});
+</script>
+</body>
+</html>
