@@ -33,8 +33,39 @@
         Instalação: <input type="text" name="instalacao" placeholder="Instalação">
         Vistoria: <input type="text" name="vistoria" placeholder="Vistoria">
     </fieldset>
+    <input type="hidden" name="nome">
+    <input type="hidden" name="cpf">
+    <input type="hidden" name="rg">
+    <input type="hidden" name="email">
+    <input type="hidden" name="celular">
+    <input type="hidden" name="rua">
+    <input type="hidden" name="numero">
+    <input type="hidden" name="cidade">
+    <input type="hidden" name="bairro">
+    <input type="hidden" name="estado">
+    <input type="hidden" name="unidade_gemdora">
+    <input type="hidden" name="unidade_beneficiaria">
+
         <input type="reset">
         <input type="submit">
+        <script>
+           window.onload = function() {
+
+           document.querySelector("[name='nome']").value = localStorage.getItem("nome");
+           document.querySelector("[name='cpf']").value = localStorage.getItem("cpf");
+           document.querySelector("[name='rg']").value = localStorage.getItem("rg");
+           document.querySelector("[name='email']").value = localStorage.getItem("email");
+           document.querySelector("[name='celular']").value = localStorage.getItem("celular");
+           document.querySelector("[name='rua']").value = localStorage.getItem("rua");
+           document.querySelector("[name='numero']").value = localStorage.getItem("numero");
+           document.querySelector("[name='cidade']").value = localStorage.getItem("cidade");
+           document.querySelector("[name='bairro']").value = localStorage.getItem("bairro");
+           document.querySelector("[name='estado']").value = localStorage.getItem("estado");
+           document.querySelector("[name='unidade_gemdora']").value = localStorage.getItem("unidade_gemdora");
+           document.querySelector("[name='unidade_beneficiaria']").value = localStorage.getItem("unidade_beneficiaria");
+
+}
+</script>
 
 </body>
 </html>
