@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7a00, #ff9500);
+}
+
+form {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff7a00;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ff7a00;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 122, 0, 0.4);
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+input[type="submit"] {
+    background: #ff7a00;
+    color: white;
+}
+
+input[type="reset"] {
+    background: #ddd;
+}
+
+input[type="submit"]:hover {
+    background: #e66a00;
+}
+
+input[type="reset"]:hover {
+    background: #ccc;
+}
+.botao:hover {
+    background-color: #ffffff;
+}
+.botao-planilha {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-planilha:hover {
+    background-color: #ffffff;
+}
+.topo {
+    position: relative; 
+    width: 100%;
+    height: 90px;   
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container-topo {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.lado-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.logo {
+    height: 90px;
+}
+
+
+.topo h1 {
+    margin: 0;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 94, 0);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background: #ff7300;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e66300;
+}
