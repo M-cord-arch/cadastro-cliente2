@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header class="topo">
+    <div class="container-topo">
+        
+        <div class="lado-esquerdo">
+            <img src="cordial.jpg.jpg" alt="Logo" class="logo">
+            <h1>Cadastro de Cliente</h1>
+        </div>
+
+        <div class="botoes">
+            <a href="index.html" class="btn">Cadastro</a>
+            <a href="index3.html" class="btn">Inversor</a>
+            <a href="https://docs.google.com/spreadsheets/d/1W2dkSLU-TZ_CAEGyav5A7CBdJ6jY81zCcByrEsHcNEc/edit?usp=sharing" target="_blank" class="btn">Planilha</a>
+        </div>
+
+    </div>
+</header>
+<form action="https://script.google.com/macros/s/AKfycbwcCx2WdGz0WN5TABZuRiExOvyW-_HllYhGj6gGpATgR20OxhuOsActbCrMwsUXY5ryuQ/exec" method="post" enctype="multipart/form-data" autocomplete="off">
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        Fornecedor: <input type="text" name="fornecedor" placeholder="Fornecedor" required>
+        Nota Fiscal: <input type="text" name="nota-fiscal" placeholder="Nota Fiscal" required>
+        Emissão: <input type="number" name="emissao" placeholder="Emissão" required>
+        Instalação: <input type="text" name="instalacao" placeholder="Instalação">
+        Vistoria: <input type="text" name="vistoria" placeholder="Vistoria">
+    </fieldset>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
